@@ -8,7 +8,7 @@ function getDate() {
 const handler = async (event) => {
   return {
     statusCode: 200,
-    body: JSON.stringify({ message: `The date is ${getDate()}.` })
+    body: JSON.stringify({ message: `The date is ${await getDate()}.` })
   };
 }
 
